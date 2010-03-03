@@ -1,0 +1,12 @@
+application: smart-source
+version: 2
+runtime: python
+api_version: 1
+
+handlers:
+
+- url: /s
+  script: sourcer.py
+
+- url: .*
+  script: main.py
